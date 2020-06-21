@@ -69,8 +69,8 @@ static Key keys[] = {
     { MODKEY,                       XK_c,      spawn,          {.v = browsercmd } },
 	{ MODKEY,                       XK_l,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = -1 } },
-//  { MODKEY|ShiftMask,             XK_i,      rotatestack,    {.i = +1 } },
-//	{ MODKEY|ShiftMask,             XK_k,      rotatestack,    {.i = -1 } },
+    //{ MODKEY|ShiftMask,             XK_i,      rotatestack,    {.i = +1 } },
+	//{ MODKEY|ShiftMask,             XK_k,      rotatestack,    {.i = -1 } },
 	{ MODKEY,                       XK_I,      incnmaster,     {.i = +1 } },
 	{ MODKEY,                       XK_K,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_g,      setmfact,       {.f = -0.05} },
@@ -89,6 +89,10 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+	{ MODKEY,                       XK_Left,   viewtoleft,     {0} },
+	{ MODKEY,                       XK_Right,  viewtoright,    {0} },
+	{ MODKEY|ShiftMask,             XK_Left,   tagtoleft,      {0} },
+	{ MODKEY|ShiftMask,             XK_Right,  tagtoright,     {0} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
