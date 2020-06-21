@@ -9,13 +9,16 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;     /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Firacode=10" };
-static const char dmenufont[]       = "monospace:size=10";
+static const char *fonts[]          = { "Firacode=12" };
+static const char dmenufont[]       = "monospace:size=12";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#005577";
+//static const char col_gray4[]       = "#eeeeee";
+//static const char col_cyan[]        = "#005577";
+static const char col_gray4[]       = "#ffffff";
+static const char col_cyan[]        = "#37474F";
+static const char col_border[]        = "#42A5F5";
 static const unsigned int baralpha = 0xd0;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
