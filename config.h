@@ -81,12 +81,16 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 static const char *browsercmd[]  = { "google-chrome-stable", NULL };
 
+static const char *timcmd[] = { "/opt/deepinwine/apps/Deepin-TIM/run.sh", NULL };
+
+
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
     { MODKEY,                       XK_c,      spawn,          {.v = browsercmd } },
+    { MODKEY|ShiftMask,             XK_t,      spawn,          {.v = timcmd } },
 	{ MODKEY,                       XK_l,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = -1 } },
     { MODKEY,                       XK_k,      rotatestack,    {.i = +1 } },
