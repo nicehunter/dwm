@@ -1717,7 +1717,7 @@ run(void)
 
 void
 runautostart(void) {
-	system("cd ~/scripts; ./autostart.sh &");
+	system("cd ~/.suckless/dwm/scripts; ./autostart.sh &");
 }
 //runautostart(void)
 //{
