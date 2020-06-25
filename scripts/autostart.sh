@@ -13,5 +13,5 @@ xfce4-volumed-pulse &
 #/bin/bash ~/.suckless/dwm/scripts/run-mailsync.sh &
 /bin/bash ~/.suckless/dwm/scripts/autostart_wait.sh &
 feh --recursive --randomize --bg-fill ~/Pictures/wallpapers/mountains-1412683.jpg &
-fcitx &
+#fcitx &
 
