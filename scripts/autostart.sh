@@ -11,6 +11,6 @@ picom -b
 xfce4-power-manager &
 xfce4-volumed-pulse &
 #/bin/bash ~/.suckless/dwm/scripts/run-mailsync.sh &
-/bim/bash ~/.suckless/dwm/scripts/autostart_wait.sh &
+/bin/bash ~/.suckless/dwm/scripts/autostart_wait.sh &
 feh --recursive --randomize --bg-fill ~/Pictures/wallpapers/mountains-1412683.jpg &
 
