@@ -85,6 +85,8 @@ static const char *browsercmd[]  = { "google-chrome-stable", NULL };
 static const char *upvol[]   = { "/home/chase/.suckless/dwm/scripts/vol-up.sh",  NULL };
 static const char *downvol[] = { "/home/chase/.suckless/dwm/scripts/vol-down.sh",  NULL };
 static const char *mutevol[] = { "/home/chase/.suckless/dwm/scripts/vol-toggle.sh",  NULL };
+static const char *uplight[]   = { "/home/chase/.suckless/dwm/scripts/backlight-up.sh",  NULL };
+static const char *downlight[] = { "/home/chase/.suckless/dwm/scripts/backlight-down.sh",  NULL };
 
 static const char *timcmd[] = { "/opt/deepinwine/apps/Deepin-TIM/run.sh", NULL };
 
@@ -107,9 +109,11 @@ static Key keys[] = {
 //  { 0,                            XF86XK_AudioLowerVolume, spawn,          {.v = downvol } },
 //	{ 0,                            XF86XK_AudioMute,        spawn,          {.v = mutevol } },
 //	{ 0,                            XF86XK_AudioRaiseVolume, spawn,          {.v = upvol   } },
-	{ MODKEY,                       XK_bracketleft,          spawn,          {.v = downvol } },
-	{ MODKEY,                       XK_backslash,            spawn,          {.v = mutevol } },
-	{ MODKEY,                       XK_bracketright,         spawn,          {.v = upvol   } },
+	{ MODKEY,                       XK_bracketleft,   spawn,   {.v = downvol } },
+	{ MODKEY,                       XK_backslash,     spawn,   {.v = mutevol } },
+	{ MODKEY,                       XK_bracketright,  spawn,   {.v = upvol   } },
+	{ MODKEY,                       XK_Up,     spawn,          {.v = uplight } },
+	{ MODKEY,                       XK_Down,   spawn,          {.v = downlight } },
 //	{ MODKEY|Mod4Mask,              XK_h,      incrgaps,       {.i = +1 } },
 //	{ MODKEY|Mod4Mask,              XK_l,      incrgaps,       {.i = -1 } },
 //	{ MODKEY|Mod4Mask|ShiftMask,    XK_h,      incrogaps,      {.i = +1 } },
@@ -140,8 +144,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	{ MODKEY,                       XK_Left,   viewtoleft,     {0} },
-	{ MODKEY,                       XK_Right,  viewtoright,    {0} },
+//	{ MODKEY,                       XK_Left,   viewtoleft,     {0} },
+//	{ MODKEY,                       XK_Right,  viewtoright,    {0} },
 	{ MODKEY|ShiftMask,             XK_Left,   tagtoleft,      {0} },
 	{ MODKEY|ShiftMask,             XK_Right,  tagtoright,     {0} },
 	TAGKEYS(                        XK_1,                      0)
