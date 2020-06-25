@@ -1,5 +1,5 @@
 #!/bin/bash
 
-sleep 10
+sleep 1
 #xmodmap ~/.Xmodmap &
 fcitx &
