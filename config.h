@@ -109,10 +109,11 @@ static Key keys[] = {
 //  { 0,                            XF86XK_AudioLowerVolume, spawn,          {.v = downvol } },
 //	{ 0,                            XF86XK_AudioMute,        spawn,          {.v = mutevol } },
 //	{ 0,                            XF86XK_AudioRaiseVolume, spawn,          {.v = upvol   } },
-	{ MODKEY,                       XK_bracketleft,   spawn,   {.v = downvol } },
-	{ MODKEY,                       XK_backslash,     spawn,   {.v = mutevol } },
-	{ MODKEY,                       XK_bracketright,  spawn,   {.v = upvol   } },
-	{ MODKEY,                       XK_Up,     spawn,          {.v = uplight } },
+	{ MODKEY,                       XK_Left,   spawn,          {.v = downvol } },
+	{ MODKEY,                       XK_Right,  spawn,          {.v = upvol   } },
+	{ MODKEY|ShiftMask,             XK_Left,   spawn,          {.v = mutevol } },
+	{ MODKEY|ShiftMask,             XK_Right,  spawn,          {.v = mutevol } },
+	{ MODKEY,                       XK_Up,     spawn,          {.v = uplight   } },
 	{ MODKEY,                       XK_Down,   spawn,          {.v = downlight } },
 //	{ MODKEY|Mod4Mask,              XK_h,      incrgaps,       {.i = +1 } },
 //	{ MODKEY|Mod4Mask,              XK_l,      incrgaps,       {.i = -1 } },
@@ -146,8 +147,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 //	{ MODKEY,                       XK_Left,   viewtoleft,     {0} },
 //	{ MODKEY,                       XK_Right,  viewtoright,    {0} },
-	{ MODKEY|ShiftMask,             XK_Left,   tagtoleft,      {0} },
-	{ MODKEY|ShiftMask,             XK_Right,  tagtoright,     {0} },
+//	{ MODKEY|ShiftMask,             XK_Left,   tagtoleft,      {0} },
+//	{ MODKEY|ShiftMask,             XK_Right,  tagtoright,     {0} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
